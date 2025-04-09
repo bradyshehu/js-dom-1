@@ -9,8 +9,10 @@ switchEl.addEventListener("click", function () {
   if (offLampEl.classList.contains("d-block")) {
     offLampEl.classList.replace("d-block", "d-none");
     onLampEl.classList.replace("d-none", "d-block");
+    switchEl.innerHTML = "Spegni";
   } else {
     offLampEl.classList.replace("d-none", "d-block");
     onLampEl.classList.replace("d-block", "d-none");
+    switchEl.innerHTML = "Accendi";
   }
 });
